@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styleNowWeather.css">
+	<link rel="stylesheet" href="css/styleListSities.css">
+	<link rel="stylesheet" href="css/reset.css">
+ 	<script src="js/nowWeather.js"></script>
+ 	<script src="js/listSities.js"></script>
+</head>
+
+<body>
+	<main class="main">
+		<div class="citiesBlock">
+			<div class="button">Press to know actual weather</div>
+			<input type="text" placeholder="choose or enter your sity">
+			<ul class="listSities">
+				<li class="listItem">Kiev</li>
+				<li class="listItem">Kharkiv</li>
+				<li class="listItem">Lviv</li>
+				<li class="listItem">Odessa</li>
+				<li class="listItem">Dnepr</li>
+				<li class="listItem">Poltava</li>
+			</ul>
+		</div>
+		<ul class="weather-area">
+			<li class="topLine">
+				<span class="tempreature">0</span>
+				<span class="tempDegree">&deg;C</span>
+				<span class="tempMinMax">
+					<div class="tempMin">
+						<span class="tempMinText">Min </span>
+						<span class="tempMinNumb">?</span>
+						<span class="tempMinDegree">&deg;</span>
+					</div>
+					<div class="tempMax">
+						<span class="tempMaxText">Max </span>
+						<span class="tempMaxNumb">?</span>
+						<span class="tempMaxDegree">&deg;</span>
+					</div>
+				</span>
+			</li>
+			<li class="topLine">
+				<img class="clouds" src="img/cloudsNone.png" alt="">
+			</li>
+			<li class="topLine">
+				<span class="description">?</span>
+			</li>
+			<li class="middleLine">
+				<ul class="weather-date">
+					<li class="sunrise">
+						<div class="sunriseBlock">
+							<div class="sunriseIcon"></div>
+							<span class="sunriseText">sunrise</span>
+							<span class="sunriseTime">00:00</span>
+						</div>
+					</li>
+					<li class="dateTime">
+						<div class="dateTimeBlock">
+							<span class="dateTimeHours">00:00</span>
+							<span class="dateTimeText">date</span>
+						</div>
+					</li>
+					<li class="sunset">
+						<div class="sunsetBlock">
+							<div class="sunsetIcon"></div>
+							<span class="sunsetText">sunset</span>
+							<span class="sunsetTime">00:00</span>
+						</div>
+					</li>
+				</ul>
+			</li>
+			<li class="bottomLine">
+				<ul class="weather-list">
+					<li class="humidity">
+						<div class="icon"></div>
+						<div class="title">humidity</div>
+						<div class="data">
+							<span class="dataNumber">?</span>
+							<span class="dataMetric">%</span>
+						</div>
+					</li>
+					<li class="wind">
+						<div class="icon"></div>
+						<div class="title">wind</div>
+						<div class="data">
+							<span class="dataNumber">?</span>
+							<span class="dataMetric">km/h</span>
+						</div>
+					</li>
+					<li class="direction">
+						<div class="icon">
+							<span class="directionArrow"></span>
+						</div>
+					</li>
+					<li class="pressure">
+						<div class="icon"></div>
+						<div class="title">pressure</div>
+						<div class="data">
+							<span class="dataNumber">?</span>
+							<span class="dataMetric">mm</span>
+						</div>
+					</li>
+					<li class="visibility">
+						<div class="icon"></div>
+						<div class="title">visibility</div>
+						<div class="data">
+							<span class="dataNumber">?</span>
+							<span class="dataMetric">km</span>
+						</div>
+					</li>	
+				</ul>
+			</li>
+		</ul>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Open Sans Condensed Light';
+    src: url('../font/OpenSansLight/opensans-condlight.eot');
+    src: url('../font/OpenSansLight/opensans-condlight.eot?#iefix') format('embedded-opentype'),
+         url('../font/OpenSansLight/opensans-condlight.woff2') format('woff2'),
+         url('../font/OpenSansLight/opensans-condlight.woff') format('woff'),
+         url('../font/OpenSansLight/opensans-condlight.ttf') format('truetype'),
+         url('../font/OpenSansLight/opensans-condlight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/backGroundClouds6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans Condensed Light';
+  color: white;
+}
+
+.weather-area {
+  width: 400px;
+  height: 242px;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  vertical-align: middle;
+  font-size: 0;
+  text-align: justify;
+}
+
+.weather-area::before {
+  content:'';
+  display: block;
+  width: 145px;
+  height: 100px;
+  position: absolute;
+  top: 188px;
+  left: 0;
+  right: 9px;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
+  clip: rect(77px, auto, auto, 0px);
+}
+
+.weather-area li {
+  display: inline-block;
+  /*outline: 1px solid blue;*/
+  vertical-align: middle;
+  color: white;
+  font: 24px 'Open Sans Condensed Light', sans-serif;
+  text-align: center;
+
+}
+
+.weather-area .topLine {
+  width: 33%;
+}
+
+.topLine span {
+  display: inline-block;
+}
+
+.tempreature {
+  font-size: 48px;
+  margin-left: 5px;
+}
+
+.tempDegree {
+  font-size: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+}
+
+.tempMinMax {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.clouds {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+.description {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 5px; 
+}
+
+.weather-area .bottomLine,
+.weather-area .middleLine {
+  width: 100%;
+    vertical-align: top;
+    font-size: 0;
+    background-image: 
+      linear-gradient(180deg, #0f0f0f 1%, #878787 1%, 
+                              #878787 2%, transparent 2%,
+                              transparent);
+}
+
+.bottomLine .weather-list {
+  text-align: justify;
+  display: block;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.bottomLine .weather-list:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+
+.weather-list li,
+.weather-date li {
+  font-size: 16px;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.weather-date li {
+  vertical-align: bottom;
+  padding-bottom: 10px;
+}
+
+.weather-list li {
+  padding-top: 14px;
+}
+
+.sunriseIcon, .sunsetIcon {
+  width: 37px;
+  height: 25px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sunriseIcon {
+  background-image: url(../img/sunrise_icon.png);
+}
+
+.sunsetIcon {
+  background-image: url(../img/sunset_icon.png);
+}
+
+.weather-date .sunrise, 
+.weather-date .sunset {
+  width: 25%;
+}
+
+.weather-date .dateTime {
+  width: 40%; 
+}
+
+.weather-date .dateTime .dateTimeHours,
+.weather-date .dateTime .dateTimeText {
+  display: block;
+}
+
+.weather-date .dateTime .dateTimeHours {
+  font-size: 40px;
+  margin: -8px 0 -5px 0;
+}
+
+
+.weather-list .icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 25px;
+  width: 19px;
+  margin: 0 auto; 
+}
+
+
+
+.weather-list .data, .weather-list .title {
+  text-align: center;
+}
+
+.weather-list .title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.humidity .icon {
+  background-image: url(../img/himidity.png);
+}
+
+.pressure .icon {
+  background-image: url(../img/pressure.png);
+  width: 15px;
+}
+
+.wind .icon {
+  background-image: url(../img/wind.png);
+  width: 18px;
+}
+
+.direction .icon {
+  background-image: url(../img/direction.png);
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+.visibility .icon {
+  background-image: url(../img/eye.png);
+  width: 26px;
+}
+
+.direction .icon .directionArrow {
+  width: 20px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/directionArrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.5s ease-out;
+}
+
+.button {
+  width: 198px;
+  background-color: #b1b1b1;
+  border-radius: 5px;
+  color: #fff;
+  font: 20px 'Open Sans Condensed Light', sans-serif;
+  padding: 10px;
+  cursor: pointer;
+  /*border: 1px solid white;*/
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.unPress {
+  background-color: rgba(0,0,0,0.5);
+}

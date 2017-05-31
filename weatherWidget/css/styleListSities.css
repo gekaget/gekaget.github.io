@@ -1,0 +1,50 @@
+.citiesBlock {
+	padding: 20px;
+}
+
+.citiesBlock input {
+	width: 200px;
+}
+
+.citiesBlock input,
+.listSities .listItem {
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	font: 16px Arial, sans-serif;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	font: 20px 'Open Sans Condensed Light', sans-serif;
+}
+
+.citiesBlock input::-webkit-input-placeholder {
+	color: #ffffff;
+	font: 20px 'Open Sans Condensed Light', sans-serif;
+}
+
+.listSities {
+	padding-left: 20px;
+	display: none;
+	list-style: none;
+	margin: 0;
+	width: 200px;
+	height: 300px;
+	overflow: auto;
+}
+
+.listSities .listItem {
+	font: 20px 'Open Sans Condensed Light', sans-serif;
+	background-image: 
+		linear-gradient(180deg, #0f0f0f 1px, #878787 1px, 
+                              #878787 2px, transparent 2px,
+                              transparent);
+}
+
+.showMenu {
+	display: block;
+}
+
+.listSities .listItem:hover {
+	background-color: rgba(0,0,0,0.8);
+}
