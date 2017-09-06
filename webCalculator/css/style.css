@@ -1,0 +1,255 @@
+body {
+  width: 100%;
+  background: url(../img/FormulBgb.jpg) no-repeat;
+  background-size: cover; 
+}
+
+.container{
+  padding: 20px;
+}
+
+
+
+/*begining Styles of Calc's wrapper*/
+.wrapCalc {
+  width: 25%;
+  min-width: 270px;
+  padding: 10px;
+  background-color: #CEDCE9;
+  float: left;
+}
+
+/*begining Styles of Calc's Area*/
+.calcArea {
+  width: 240px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 14px;
+  background-color: #EAF2FA;
+}
+
+.calcH1 {
+  padding: 2px 0;
+  text-align: center;
+  background-image: 
+    linear-gradient(to bottom, 
+      #FEFEFF , #E5EAF5 45%,
+      #D4DBED 45%, #E1E6F6 100%);
+}
+
+.calcWindow {
+  width: 100%;
+  display: block;
+  resize: none;
+  margin-bottom: 4px;
+  text-align: right;
+  font-size: 34px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.calcMemoryInfo {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+.buttonsSection {
+  line-height: 2;
+}
+
+.memoryButtons, 
+.otherButtons,
+.cleanButtons,
+.inputButtons,
+.functionsButtons {
+  text-align: justify;
+  font-size: 0;
+}
+
+.memoryButtons::after,
+.otherButtons::after,
+.cleanButtons::after,
+.inputButtons::after,
+.functionsButtons::after {
+  content:'';
+  width: 100%;
+  display: inline-block;
+  height: 0;
+}
+
+.memoryButtons li,
+.cleanButtons li,
+.inputButtons li,
+.functionsButtons li {
+  width: 43px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #8797AA,
+              inset 0 0 0 2px #FFFFFF;
+}
+
+.cleanButtons li,
+.functionsButtons li {
+  background-image: linear-gradient(to bottom,
+    #EFF5FB 0%, #E2EAF3 47%,
+    #D5E0ED 47%, #D7E2EF 100%);
+}
+
+.inputButtons li {
+  background-image: linear-gradient(to bottom,
+    #F7FBFF 0%, #EDF3F8 47%,
+    #E7EEF5 47%, #EBF3F9 100%);
+}
+
+.memoryButtons li:hover,
+.cleanButtons li:hover,
+.inputButtons li:hover,
+.functionsButtons li:hover {
+  background-image: linear-gradient(to bottom,
+    #FFF4E9 0%, #FFE3C2 47%,
+    #FFD063 47%, #FFE08E 100%);
+  box-shadow: inset 0 0 0 1px #FFFAE2,
+              inset 0 0 0 2px #FFDC00;
+}
+
+.memoryButtons li:active,
+.cleanButtons li:active,
+.inputButtons li:active,
+.functionsButtons li:active {
+  background-image: linear-gradient(to bottom,
+    #FACC8C 0%, #FFC875 47%,
+    #FFBC4E 47%, #F8E77C 100%);
+  box-shadow: inset 0 0 0 1px #EFC283,
+              inset 0 0 0 2px #D09C0E;
+}
+
+.otherButtons li {
+  display: inline-block;
+}
+
+.otherButtons li.inputCleanButtons {
+  width: 59%;
+  margin-right: 2.5%
+}
+
+.otherButtons li.otherFunctionsButtons {
+  width: 38.5%;
+}
+
+.inputButtons li.null,
+.functionsButtons li.resultCulc {
+  width: 92px;
+}
+/*ending Styles of Calc's Area*/
+
+/*begining Styles of Formulas'Area*/
+.formulasArea{
+  padding-top: 15px;
+  width: 265px;
+  margin: 0 auto;
+}
+
+.formulsHead {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formulasSubject {
+  width: 85%;
+  float: left;
+}
+
+.formulasBlock {
+  display: block;
+  height: 1em;
+  margin-bottom: 5px;
+}
+
+.formulasTumblerBlock {
+  width: 12%;
+  height: 0.8em;
+  float: right;
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 0.1em 0.2em;
+  text-align: right;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.formulasTumbler {
+  width: 60%;
+  display: inline-block;
+  height: 0.8em;
+  background-color: red;
+  border-radius: 0.4em;
+}
+
+/*ending Styles of Formulas'Area*/
+
+
+
+/*ending Styles of Calc's wrapper*/
+
+/*begining Styles of Formulas' Section*/
+
+.formulas {
+  width: 60%;
+  float: left;
+  margin: 0 6% 0 6%;
+}
+
+.formulasSlider{
+  width: 720px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.formulasSliderLine {
+  font-size: 0;
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.formulesItems {
+  width: 350px;
+  height: 500px;
+  margin-right: 10px;
+  display: block;
+  float: left;
+}
+
+.formulasSliderLine :last-child {
+  margin-right: 0px;
+}
+
+.sliderButton {
+  width: 20%;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.sliderButton.prev {
+  margin-right: 10px;
+}
+
+
+/*ending Styles of Formulas' Section*/
+
+.clearfix:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}

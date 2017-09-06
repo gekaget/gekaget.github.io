@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New doc</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/main.js"></script>
+	<script src="js/slider.js"></script>
+<body>
+	<div class="container clearfix">
+		<section class="wrapCalc">
+			<div class="calcArea">
+				<h1 class="calcH1">Browser Simple Calculator</h1>
+				<input type="text" class="calcWindow" pattern="\d+(,\d{2})?">
+				<div class="calcMemoryInfo">memory: <span class="calcMemoryInfoNumber">0</span></div>
+				<div class="buttonsSection">
+					<ul class="memoryButtons">
+						<li class="mClean">MC</li>
+						<li class="mWrite">MR</li>
+						<li class="mSource">MS</li>
+						<li class="mPlus">M+</li>
+						<li class="mMinus">M-</li>
+					</ul>
+					<ul class="otherButtons">
+						<li class="inputCleanButtons">
+							<ul class="cleanButtons">
+								<li class="clean backspace">&larr;</li>
+								<li class="clean extra">CE</li>
+								<li class="clean value">C</li>
+							</ul>
+							<ul class="inputButtons">
+								<li class="number">7</li>
+								<li class="number">8</li>
+								<li class="number">9</li>
+								<li class="number">4</li>
+								<li class="number">5</li>
+								<li class="number">6</li>
+								<li class="number">1</li>
+								<li class="number">2</li>
+								<li class="number">3</li>
+								<li class="null number">0</li>
+								<li class="comma number">.</li>
+							</ul>
+						</li>
+						<li class="otherFunctionsButtons">
+							<ul class="functionsButtons">
+								<li class="plusMinus">+/-</li>
+								<li class="squareRoot">&radic;</li>
+								<li class="devision simpleMath">/</li>
+								<li class="persent">%</li>
+								<li class="multiplication simpleMath">*</li>
+								<li class="partNumber">1/x</li>
+								<li class="nimus simpleMath">-</li>
+								<li class="plus simpleMath">+</li>
+								<li class="resultCulc">=</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="formulasArea">
+				<h2 class="formulsHead">Here you can eneble furmules that you need!</h2>
+				<ul class="formulasButtons">
+					<li class="formulasBlock clearfix">
+						<p class="formulasSubject">Basic mathematics' formulas</p>
+						<div class="formulasTumblerBlock">
+							<span class="formulasTumbler"></span>
+						</div>
+					</li>
+					<li class="formulasBlock clearfix">
+						<p class="formulasSubject">Basic trigonometric' formulas</p>
+						<div class="formulasTumblerBlock">
+							<span class="formulasTumbler"></span>
+						</div>
+					</li>
+					<li class="formulasBlock clearfix">
+						<p class="formulasSubject">Formulas of Area's figures</p>
+						<div class="formulasTumblerBlock">
+							<span class="formulasTumbler"></span>
+						</div>
+					</li>
+					<li class="formulasBlock clearfix">
+						<p class="formulasSubject">Formulas of derivative</p>
+						<div class="formulasTumblerBlock">
+							<span class="formulasTumbler"></span>
+						</div>
+					</li>
+					<li class="formulasBlock clearfix">
+						<p class="formulasSubject">Formulas of logarithm</p>
+						<div class="formulasTumblerBlock">
+							<span class="formulasTumbler"></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="formulas">
+			<div class="formulasSlider">
+				<div class="formulasSliderLine clearfix">
+					<img src="img/Basic%20mathematics.png" alt="" class="formulesItems">
+					<img src="img/Basic%20trigonometric.png" alt="" class="formulesItems">
+					<img src="img/Areas%20figures.png" alt="" class="formulesItems">
+					<img src="img/derivative.png" alt="" class="formulesItems">
+					<img src="img/Logariphm.png" alt="" class="formulesItems">
+				</div>
+				<button class="sliderButton prev">&larr; previous formulas</button>
+				<button class="sliderButton next">next formulas &rarr;</button>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
