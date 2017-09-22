@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New doc</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src="js/main.js"></script>
+	<script src="js/toe.js"></script>
+	<script src="js/modalWind.js"></script>
+<body>
+	<div id="wrapper">
+		<main id="main">
+			<section class="settings activeSection">
+				<header id="header">
+					<h1 class="title">Games Tic-Tac-Toe</h1>
+				</header>
+				<div class="boardBlock">
+					<p class="boardText">board</p>
+					<div class="boardHolderTumbler">
+						<div class="boardTumbler">
+							<div class="boardTumblerButton"></div>
+							<img src="img/simplGrid.png" class="simplGrid activeTumb" alt="">
+							<img src="img/hardGrid.png" class="hardGrid" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="plaersBlock">
+					<p class="plaersText">plaers</p>
+					<div class="plaersHolderTumbler">
+						<div class="plaersTumbler">
+							<div class="plaersTumblerButton"></div>
+							<img src="img/onePerson.png" class="onePerson activeTumb" alt="">
+							<img src="img/twoPerson.png" class="twoPerson" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="playButton">
+					<p class="playText">play</p>
+				</div>
+			</section>
+			<section class="gameBlock">
+				<div class="homeButton">
+					<img src="img/home.png" class="homeImg" alt="">
+				</div>
+				<ul class="plaersData">
+					<li class="plaerDataX clearfix">
+						<div class="plaerTextX">X</div>
+						<div class="plaerWinsX">
+							<span class="plaerCountWins">wins</span><br>
+							<span class="plaerCountWinsX">0</span>
+						</div>
+					</li>
+					<li class="plaerDataTies">
+						<span class="plaerCountTies">ties</span><br>
+						<span class="plaerCountTiesO">0</span>
+					</li>
+					<li class="plaerDataO clearfix">
+						<div class="plaerTextO">O</div>
+						<div class="plaerWinsO">
+							<span class="plaerCountWins">wins</span><br>
+							<span class="plaerCountWinsO">0</span>
+						</div>
+					</li>
+				</ul>
+				<ul class="gameBoard"></ul>
+				<div class="statusGame">
+					<span class="plaerStepText">step of player: </span>
+					<span class="plaerStepNow">x</span>
+				</div>
+				<div class="buttonsBlock">
+					<button class="buttonNewGame">play again</button>
+					<button class="buttonReset">reset wins</button>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+</html>

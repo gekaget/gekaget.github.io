@@ -1,0 +1,379 @@
+
+@import url(../css/modalWind.css);
+
+$background-color-dark: #353e13;
+$background-color-middle: #879846;
+$background-color-lite: #BBD266; 
+$main-color-content : #333A1B;
+$tumbler-color-button: #bbd266;
+$play-color-button: #FC4500;
+$play-color-button-active: #bbd266;
+$color-X: #034E65;
+$color-O: #FD7400;
+$color-win: #ff0000;
+$color-lightGrey: #bdbfb5;
+
+$main-border-radius: 10px;
+
+$main-font-settings: bold 40px Arial, sans-serif;
+
+
+body {
+	box-sizing: border-box;
+}
+
+
+#wrapper {
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	background: 
+		radial-gradient($background-color-lite,
+						$background-color-dark);
+}
+
+.claerfix::after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+/* begining of Main */
+#main {
+	margin: auto;
+	width: 100%;
+
+	/* begining of Section settings */
+
+	.settings{
+		width: 45%;
+		margin: 0 auto;
+		color: $main-color-content;
+		display: none;
+	}
+
+	.title{
+		font: bold 50px Arial, sans-serif;
+		text-align: center;
+		color: $main-color-content;
+		margin-bottom: 20px;
+	}
+
+	.boardBlock,
+	.plaersBlock {
+		text-align: justify;
+		font-size: 0;
+		margin-bottom: 25px;
+
+		&::after {
+			content:'';
+			display: inline-block;
+			width: 100%;
+			height: 0;
+		}
+	}
+
+	.boardText,
+	.boardHolderTumbler,
+	.plaersText,
+	.plaersHolderTumbler {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.boardHolderTumbler,
+	.plaersHolderTumbler {
+		background-color: $main-color-content;
+		border-radius: $main-border-radius;
+		padding: 10px;
+	}
+
+	.boardText,
+	.plaersText {
+		font: $main-font-settings;
+		text-transform: uppercase;
+	}
+
+	.plaersTumbler,
+	.boardTumbler {
+		width: 376px;
+		height: 101px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.plaersTumblerButton,
+	.boardTumblerButton {
+		width: 188px;
+		height: 101px;
+		background-color: $tumbler-color-button;
+		border-radius: $main-border-radius;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.5s ease;
+	}
+
+	.pressTumblerButton {
+		left: 100%;
+		margin-left: -188px;
+	}
+
+	.onePerson,
+	.twoPerson,
+	.simplGrid,
+	.hardGrid {
+		position: absolute;
+		top: 0;
+		opacity: 0.4;
+		transition: opacity 1s ease;
+	}
+
+	.onePerson,
+	.simplGrid {
+		margin: 0 47px;
+		left: 0;
+	}
+
+	.twoPerson,
+	.hardGrid {
+		right: 0;
+	}
+
+	.hardGrid {
+		margin: 0 40px;
+	}
+
+	.activeTumb {
+		opacity: 1;
+	}
+
+	.playText {
+		text-align: center;
+		font: $main-font-settings;
+		text-transform: uppercase;
+		background-color: $play-color-button;
+		padding: 25px;
+		border-radius: $main-border-radius;
+		cursor: pointer;
+	}
+
+	.playText:active {
+		background-color: $play-color-button-active;
+	}
+	/* endining of Section settings */
+
+	/* begining of Section gameBlock */
+	.gameBlock {
+		width: 45%;
+		margin: 0 auto;
+		color: $main-color-content;
+		background-color: $background-color-lite;
+		border-radius: $main-border-radius;
+		padding: 10px;
+		display: none;
+	}
+
+	/* begining of Home Button's Block*/
+
+	.homeButton {
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+		margin: 0 auto;
+		background-color: $background-color-dark;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	.homeImg {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* begining of plaersData's Block*/
+
+	.plaersData {
+		width: 310px;
+		text-align: justify;
+		margin: 10px auto;
+		font-size: 0;
+
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 0;
+		}
+	}
+
+	.plaersData li {
+		display: inline-block;
+	}
+
+	.plaerDataO,
+	.plaerDataX {
+		width: 35%;
+		border-radius: $main-border-radius;
+		background-color: $background-color-middle;
+	}
+
+	.plaerDataTies {
+		width: 25%;
+	}
+
+	.plaerTextX {
+		float: left;
+		color: $color-X;
+		margin-left: 14px;
+	}
+
+	.plaerTextO {
+		float: right;
+		color: $color-O;
+		margin-right: 12px;
+	}
+
+	.plaerTextX, 
+	.plaerTextO  {
+		font: $main-font-settings;
+		font-size: 50px;
+		text-shadow: 1px 1px 1px white;
+	}
+
+	.plaerWinsX,
+	.plaerWinsO,
+	.plaerDataTies {
+		text-align: center;
+	}
+
+	.plaerWinsX span,
+	.plaerWinsO span,
+	.plaerDataTies span {
+		display: inline-block;
+	}
+
+	.plaerCountWins,
+	.plaerCountTies {
+		font: $main-font-settings;
+		font-size: 15px;
+		margin-top: 5px;
+	}
+	
+	.plaerCountWinsX,
+	.plaerCountWinsO,
+	.plaerCountTiesO {
+		font: $main-font-settings;
+		font-size: 30px;
+		padding-top: -20px;
+	}
+ 	
+	/* begining of gameBoard's Block*/
+
+	.gameBoard {
+		width: 310px;
+		margin: 0 auto;
+		font-size: 0;
+	}
+
+	.gameBoardItem {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		font: $main-font-settings;
+		font-size: 80px;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding-top: 10px;
+		vertical-align: top;
+	}
+
+	.gameBoard :nth-child(3n+2) {
+		border-left: 5px solid $background-color-dark;
+		border-right: 5px solid $background-color-dark;
+	}
+
+	.gameBoard :nth-child(-n+6):nth-child(n+4) {
+		border-top: 5px solid $background-color-dark;
+		border-bottom: 5px solid $background-color-dark;
+	}
+
+	.gameBoardItem.win {
+		color: $color-win;
+	}
+
+	/* ending of gameBoard's Block*/
+
+	/* begining of statusGame's Block*/
+
+	.statusGame {
+		text-align: center;
+		margin: 15px auto;
+	}
+
+	.plaerStepText,
+	.plaerStepNow {
+		font: $main-font-settings;
+		font-size: 30px;
+	}
+
+	.plaerStepNow {
+		text-shadow: 1px 1px 1px white;
+		text-transform: uppercase;
+	}
+
+	.plaerStepNow.x {
+		color: $color-X;
+	}
+
+	.plaerStepNow.o {
+		color: $color-O;
+	}
+	
+	/* ending of statusGame's Block*/
+
+	/* begining of buttons' Block*/
+	.buttonsBlock {
+		width: 80%;
+		margin: 0 auto;
+		text-align: justify;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 0px;
+		}
+	}
+
+	.buttonNewGame,
+	.buttonReset {
+		width: 35%;
+		padding: 10px 15px;
+		background-color: $background-color-dark;
+		color: $color-lightGrey;
+		font: $main-font-settings;
+		font-size: 20px;
+		border: none;
+		border-radius: $main-border-radius;
+		cursor: pointer;
+	}
+
+	.buttonNewGame:active,
+	.buttonReset:active {
+		background-color: $background-color-middle;
+		color: $main-color-content;
+	}
+	/* endining of buttons' Block*/
+
+	/* endining of Section gameBlock */
+
+	.activeSection {
+		display: block;
+	}
+}
+
+/* endining of Main */

@@ -1,0 +1,27 @@
+#blockScreen, #modalWindow {
+    position: fixed;
+}
+#blockScreen {
+    background: rgba(0, 0, 0, .5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#modalWindow {
+    z-index: 110;
+    background: #353e13;
+    padding: 15px 5px;
+    border-radius: 10px;
+    color: #ff0000;
+    font: bold 40px Arial, sans-serif;
+    border: 3px solid #a1a1a1;
+    box-shadow: 0 0 10px #444;
+    text-transform: uppercase;
+}
+
+#modalWindow .statusGame {
+    text-align: center;
+}

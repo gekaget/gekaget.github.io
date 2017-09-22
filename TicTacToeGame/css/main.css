@@ -1,0 +1,251 @@
+@import url(../css/modalWind.css);
+body {
+  box-sizing: border-box; }
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  background: radial-gradient(#BBD266, #353e13); }
+
+.claerfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* begining of Main */
+#main {
+  margin: auto;
+  width: 100%;
+  /* begining of Section settings */
+  /* endining of Section settings */
+  /* begining of Section gameBlock */
+  /* begining of Home Button's Block*/
+  /* begining of plaersData's Block*/
+  /* begining of gameBoard's Block*/
+  /* ending of gameBoard's Block*/
+  /* begining of statusGame's Block*/
+  /* ending of statusGame's Block*/
+  /* begining of buttons' Block*/
+  /* endining of buttons' Block*/
+  /* endining of Section gameBlock */ }
+  #main .settings {
+    width: 45%;
+    margin: 0 auto;
+    color: #333A1B;
+    display: none; }
+  #main .title {
+    font: bold 50px Arial, sans-serif;
+    text-align: center;
+    color: #333A1B;
+    margin-bottom: 20px; }
+  #main .boardBlock,
+  #main .plaersBlock {
+    text-align: justify;
+    font-size: 0;
+    margin-bottom: 25px; }
+    #main .boardBlock::after,
+    #main .plaersBlock::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 0; }
+  #main .boardText,
+  #main .boardHolderTumbler,
+  #main .plaersText,
+  #main .plaersHolderTumbler {
+    display: inline-block;
+    vertical-align: middle; }
+  #main .boardHolderTumbler,
+  #main .plaersHolderTumbler {
+    background-color: #333A1B;
+    border-radius: 10px;
+    padding: 10px; }
+  #main .boardText,
+  #main .plaersText {
+    font: bold 40px Arial, sans-serif;
+    text-transform: uppercase; }
+  #main .plaersTumbler,
+  #main .boardTumbler {
+    width: 376px;
+    height: 101px;
+    position: relative;
+    cursor: pointer; }
+  #main .plaersTumblerButton,
+  #main .boardTumblerButton {
+    width: 188px;
+    height: 101px;
+    background-color: #bbd266;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease; }
+  #main .pressTumblerButton {
+    left: 100%;
+    margin-left: -188px; }
+  #main .onePerson,
+  #main .twoPerson,
+  #main .simplGrid,
+  #main .hardGrid {
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    transition: opacity 1s ease; }
+  #main .onePerson,
+  #main .simplGrid {
+    margin: 0 47px;
+    left: 0; }
+  #main .twoPerson,
+  #main .hardGrid {
+    right: 0; }
+  #main .hardGrid {
+    margin: 0 40px; }
+  #main .activeTumb {
+    opacity: 1; }
+  #main .playText {
+    text-align: center;
+    font: bold 40px Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: #FC4500;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer; }
+  #main .playText:active {
+    background-color: #bbd266; }
+  #main .gameBlock {
+    width: 45%;
+    margin: 0 auto;
+    color: #333A1B;
+    background-color: #BBD266;
+    border-radius: 10px;
+    padding: 10px;
+    display: none; }
+  #main .homeButton {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #353e13;
+    border-radius: 50%;
+    cursor: pointer; }
+  #main .homeImg {
+    max-width: 100%;
+    height: auto; }
+  #main .plaersData {
+    width: 310px;
+    text-align: justify;
+    margin: 10px auto;
+    font-size: 0; }
+    #main .plaersData::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 0; }
+  #main .plaersData li {
+    display: inline-block; }
+  #main .plaerDataO,
+  #main .plaerDataX {
+    width: 35%;
+    border-radius: 10px;
+    background-color: #879846; }
+  #main .plaerDataTies {
+    width: 25%; }
+  #main .plaerTextX {
+    float: left;
+    color: #034E65;
+    margin-left: 14px; }
+  #main .plaerTextO {
+    float: right;
+    color: #FD7400;
+    margin-right: 12px; }
+  #main .plaerTextX,
+  #main .plaerTextO {
+    font: bold 40px Arial, sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px white; }
+  #main .plaerWinsX,
+  #main .plaerWinsO,
+  #main .plaerDataTies {
+    text-align: center; }
+  #main .plaerWinsX span,
+  #main .plaerWinsO span,
+  #main .plaerDataTies span {
+    display: inline-block; }
+  #main .plaerCountWins,
+  #main .plaerCountTies {
+    font: bold 40px Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 5px; }
+  #main .plaerCountWinsX,
+  #main .plaerCountWinsO,
+  #main .plaerCountTiesO {
+    font: bold 40px Arial, sans-serif;
+    font-size: 30px;
+    padding-top: -20px; }
+  #main .gameBoard {
+    width: 310px;
+    margin: 0 auto;
+    font-size: 0; }
+  #main .gameBoardItem {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    font: bold 40px Arial, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 10px;
+    vertical-align: top; }
+  #main .gameBoard :nth-child(3n+2) {
+    border-left: 5px solid #353e13;
+    border-right: 5px solid #353e13; }
+  #main .gameBoard :nth-child(-n+6):nth-child(n+4) {
+    border-top: 5px solid #353e13;
+    border-bottom: 5px solid #353e13; }
+  #main .gameBoardItem.win {
+    color: #ff0000; }
+  #main .statusGame {
+    text-align: center;
+    margin: 15px auto; }
+  #main .plaerStepText,
+  #main .plaerStepNow {
+    font: bold 40px Arial, sans-serif;
+    font-size: 30px; }
+  #main .plaerStepNow {
+    text-shadow: 1px 1px 1px white;
+    text-transform: uppercase; }
+  #main .plaerStepNow.x {
+    color: #034E65; }
+  #main .plaerStepNow.o {
+    color: #FD7400; }
+  #main .buttonsBlock {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify; }
+    #main .buttonsBlock::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 0px; }
+  #main .buttonNewGame,
+  #main .buttonReset {
+    width: 35%;
+    padding: 10px 15px;
+    background-color: #353e13;
+    color: #bdbfb5;
+    font: bold 40px Arial, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; }
+  #main .buttonNewGame:active,
+  #main .buttonReset:active {
+    background-color: #879846;
+    color: #333A1B; }
+  #main .activeSection {
+    display: block; }
+
+/* endining of Main */
